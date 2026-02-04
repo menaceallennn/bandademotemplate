@@ -3,27 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grupo Diamante</title>
+<title>Grupo Eclipse</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Oswald:wght@600&display=swap" rel="stylesheet">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 }
 
 body{
-background:#0a0a0a;
+background:black;
 color:white;
-font-family:'Playfair Display',serif;
+font-family:'Oswald',sans-serif;
 }
 
-header{
+.hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)),
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
 url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
@@ -32,31 +31,34 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 }
 
-header h1{
+.hero h1{
 font-family:'Cinzel',serif;
-font-size:4.5rem;
-letter-spacing:6px;
-color:#c9a227;
-text-shadow:0 0 20px rgba(201,162,39,0.7);
+font-size:5rem;
+letter-spacing:8px;
+color:#d4af37;
+text-shadow:
+0 0 10px rgba(255,215,0,0.8),
+0 0 20px rgba(255,215,0,0.6),
+0 0 40px rgba(255,215,0,0.4);
 }
 
-header p{
+.hero h2{
+font-size:2rem;
 margin-top:20px;
-font-size:1.3rem;
-opacity:0.9;
+letter-spacing:4px;
+color:white;
 }
 
 .btn{
-margin-top:35px;
-padding:15px 40px;
-background:#c9a227;
+margin-top:40px;
+padding:15px 45px;
+background:#d4af37;
 color:black;
 text-decoration:none;
 font-weight:bold;
-border-radius:40px;
+border-radius:50px;
 transition:0.3s;
 }
 
@@ -64,132 +66,57 @@ transition:0.3s;
 background:white;
 }
 
-section{
-padding:100px 10%;
+.section{
+padding:80px 10%;
 text-align:center;
 }
 
-section h2{
-font-family:'Cinzel',serif;
-font-size:2.7rem;
-margin-bottom:40px;
-color:#c9a227;
-letter-spacing:2px;
+.section h3{
+font-size:2.5rem;
+color:#d4af37;
+margin-bottom:30px;
+letter-spacing:3px;
 }
 
-.about p{
-max-width:750px;
-margin:auto;
-font-size:1.1rem;
-line-height:1.8;
-opacity:0.85;
-}
-
-.shows .event{
-margin-bottom:25px;
-padding:20px;
-background:#141414;
-border-left:5px solid #c9a227;
-border-radius:10px;
+.event{
+margin-bottom:20px;
 font-size:1.2rem;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.gallery img{
-width:100%;
-border-radius:15px;
-transition:0.4s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-.contact form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-.contact input,
-.contact textarea{
-padding:15px;
-border:none;
-border-radius:10px;
-background:#1a1a1a;
-color:white;
-font-family:'Playfair Display',serif;
-}
-
-.contact button{
-padding:15px;
-border:none;
-border-radius:40px;
-background:#c9a227;
-font-weight:bold;
-cursor:pointer;
+border-bottom:1px solid #333;
+padding-bottom:10px;
 }
 
 footer{
 padding:40px;
 text-align:center;
 background:#111;
-opacity:0.7;
 font-size:0.9rem;
+opacity:0.7;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>GRUPO DIAMANTE</h1>
-<p>Elegancia y tradición que se sienten en el corazón</p>
-<a href="#contacto" class="btn">Contrataciones</a>
-</header>
+<div class="hero">
+<h1>GRUPO ECLIPSE</h1>
+<h2>MÚSICA NORTEÑA EN VIVO</h2>
+<a href="#contacto" class="btn">CONTRATACIONES</a>
+</div>
 
-<section class="about">
-<h2>Nuestra Historia</h2>
-<p>
-Grupo Diamante nace con la pasión por la música regional mexicana llevando alegría y elegancia a cada evento. 
-Con un estilo distinguido y presencia impecable ofrecemos un espectáculo inolvidable para bodas, quinceañeras y eventos especiales.
-</p>
-</section>
+<div class="section">
+<h3>PRÓXIMAS PRESENTACIONES</h3>
+<div class="event">15 MARZO – SAN ANTONIO TX</div>
+<div class="event">29 MARZO – AUSTIN TX</div>
+<div class="event">12 ABRIL – HOUSTON TX</div>
+</div>
 
-<section class="shows">
-<h2>Próximos Eventos</h2>
-<div class="event">15 Marzo - San Antonio TX</div>
-<div class="event">29 Marzo - Austin TX</div>
-<div class="event">12 Abril - Houston TX</div>
-</section>
-
-<section class="gallery">
-<h2>Galería</h2>
-<img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80">
-</section>
-
-<section class="contact" id="contacto">
-<h2>Contrataciones</h2>
-<form>
-<input type="text" placeholder="Nombre">
-<input type="email" placeholder="Correo electrónico">
-<textarea rows="4" placeholder="Mensaje"></textarea>
-<button type="submit">Enviar Solicitud</button>
-</form>
-</section>
+<div class="section" id="contacto">
+<h3>CONTACTO DIRECTO</h3>
+<p>Contrataciones para eventos privados, bodas, quinceañeras y bailes masivos.</p>
+</div>
 
 <footer>
-© 2026 Grupo Diamante | Música Regional Mexicana
+© 2026 GRUPO ECLIPSE | REGIONAL MEXICANO
 </footer>
 
 </body>
