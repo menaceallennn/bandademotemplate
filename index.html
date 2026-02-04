@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grupo Imperial</title>
+<title>Grupo Diamante</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -16,15 +16,15 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Montserrat',sans-serif;
-background:#0b0b0b;
+background:#0a0a0a;
 color:white;
+font-family:'Playfair Display',serif;
 }
 
 header{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=80');
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)),
+url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -32,28 +32,30 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
 header h1{
 font-family:'Cinzel',serif;
 font-size:4.5rem;
-letter-spacing:5px;
-color:#d4af37;
+letter-spacing:6px;
+color:#c9a227;
+text-shadow:0 0 20px rgba(201,162,39,0.7);
 }
 
 header p{
 margin-top:20px;
-font-size:1.2rem;
-opacity:0.85;
+font-size:1.3rem;
+opacity:0.9;
 }
 
 .btn{
-margin-top:30px;
-padding:14px 35px;
-background:#d4af37;
+margin-top:35px;
+padding:15px 40px;
+background:#c9a227;
 color:black;
 text-decoration:none;
-font-weight:600;
+font-weight:bold;
 border-radius:40px;
 transition:0.3s;
 }
@@ -63,36 +65,39 @@ background:white;
 }
 
 section{
-padding:90px 10%;
+padding:100px 10%;
 text-align:center;
 }
 
 section h2{
 font-family:'Cinzel',serif;
-font-size:2.5rem;
+font-size:2.7rem;
 margin-bottom:40px;
-color:#d4af37;
+color:#c9a227;
+letter-spacing:2px;
 }
 
 .about p{
 max-width:750px;
 margin:auto;
+font-size:1.1rem;
 line-height:1.8;
 opacity:0.85;
 }
 
 .shows .event{
-margin-bottom:20px;
+margin-bottom:25px;
 padding:20px;
-background:#151515;
-border-radius:12px;
-font-size:1.1rem;
+background:#141414;
+border-left:5px solid #c9a227;
+border-radius:10px;
+font-size:1.2rem;
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .gallery img{
@@ -110,24 +115,25 @@ max-width:500px;
 margin:auto;
 display:flex;
 flex-direction:column;
-gap:15px;
+gap:20px;
 }
 
 .contact input,
 .contact textarea{
-padding:14px;
+padding:15px;
 border:none;
 border-radius:10px;
-background:#151515;
+background:#1a1a1a;
 color:white;
+font-family:'Playfair Display',serif;
 }
 
 .contact button{
-padding:14px;
+padding:15px;
 border:none;
 border-radius:40px;
-background:#d4af37;
-font-weight:600;
+background:#c9a227;
+font-weight:bold;
 cursor:pointer;
 }
 
@@ -135,7 +141,7 @@ footer{
 padding:40px;
 text-align:center;
 background:#111;
-opacity:0.6;
+opacity:0.7;
 font-size:0.9rem;
 }
 </style>
@@ -144,24 +150,24 @@ font-size:0.9rem;
 <body>
 
 <header>
-<h1>GRUPO IMPERIAL</h1>
-<p>Elegancia, tradición y pasión en cada escenario</p>
+<h1>GRUPO DIAMANTE</h1>
+<p>Elegancia y tradición que se sienten en el corazón</p>
 <a href="#contacto" class="btn">Contrataciones</a>
 </header>
 
 <section class="about">
-<h2>Sobre Nosotros</h2>
+<h2>Nuestra Historia</h2>
 <p>
-Grupo Imperial es una agrupación regional mexicana dedicada a brindar espectáculos de alta calidad. 
-Con una presencia elegante y un sonido potente, llevamos alegría a bodas, quinceañeras, eventos privados y bailes masivos.
+Grupo Diamante nace con la pasión por la música regional mexicana llevando alegría y elegancia a cada evento. 
+Con un estilo distinguido y presencia impecable ofrecemos un espectáculo inolvidable para bodas, quinceañeras y eventos especiales.
 </p>
 </section>
 
 <section class="shows">
-<h2>Próximas Presentaciones</h2>
-<div class="event">8 Marzo - San Antonio TX</div>
-<div class="event">22 Marzo - Austin TX</div>
-<div class="event">5 Abril - Houston TX</div>
+<h2>Próximos Eventos</h2>
+<div class="event">15 Marzo - San Antonio TX</div>
+<div class="event">29 Marzo - Austin TX</div>
+<div class="event">12 Abril - Houston TX</div>
 </section>
 
 <section class="gallery">
@@ -173,17 +179,17 @@ Con una presencia elegante y un sonido potente, llevamos alegría a bodas, quinc
 </section>
 
 <section class="contact" id="contacto">
-<h2>Contacto</h2>
+<h2>Contrataciones</h2>
 <form>
 <input type="text" placeholder="Nombre">
 <input type="email" placeholder="Correo electrónico">
 <textarea rows="4" placeholder="Mensaje"></textarea>
-<button type="submit">Enviar Mensaje</button>
+<button type="submit">Enviar Solicitud</button>
 </form>
 </section>
 
 <footer>
-© 2026 Grupo Imperial | Contrataciones disponibles
+© 2026 Grupo Diamante | Música Regional Mexicana
 </footer>
 
 </body>
